@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wahool Header</title>
+  <link rel="stylesheet" href="wahool-header.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.logo {
+    cursor: pointer;
+    width: 141.5px;
+    margin-right: 18px;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    display: block;
+    height: 80px;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #d1d1d1;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 99;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+
+nav {
+    display: flex;
+    align-items: center; 
+    height:100%;
+    width: 100%;
+    justify-content: space-between;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.nav-text{
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 18px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666;
+    transition: all .2s ease;
+    margin: 0px !important;
+    width: auto;
+    height: auto;
+    float: left;
+    display: block;
+    }
+
+.nav-text:hover {
+    color: #000;
+}
+
+
+.nav-text-wrapper { 
+    display: flex;
+    align-items: center;
+
+}
+
+.apply-now-btn {
+        width: 150px;
+        font-family: 'Raleway', sans-serif;
+        height: 46.15px;
+        background: #000;
+        border-radius: 2px;
+        display: table;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 46.15px;
+        letter-spacing: .1px;
+    }
+
+nav .icon {
+        display: none;
+      }
+
+.fa fa-bars {
+    color:#000;
+}
+
+@media screen and (max-width: 767px){
+    header {
+        display: none;
+        padding: 0 10px;
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .mDiv {
+        display: none;
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mDiv {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .mobile {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        height: 80px;
+        min-width: 375px ;
+        background: #fcfcfc;
+        padding-left: 53px;
+        padding-right: 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #d1d1d1;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .mobile .logo {
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+      
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .mobile .selects {
+        width: .4rem;
+        height: .4rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .mobile .headerBox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 9999;
+        padding: 32px 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mobile .headerBox .navLogo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mobile .headerBox .listMenu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .mobile .headerBox .btns {
+        width: 150px;
+        font-family: 'Raleway', sans-serif;
+        height: 46.15px;
+        background: rgb(255, 255, 255);
+        border-radius: 2px;
+        display: table;
+        text-align: center;
+        color: #ff6700;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 46.15px;
+        letter-spacing: .1px;
+    }
+        
+    }
+
+
+@media screen and (max-width: 767px) {
+    .mobile .selects {
+        width: 25px;
+        height: 25px;
+        display: flex;
+    }
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    .mobile .logo {
+        width: 2rem;
+        display: flex;
+        justify-content: center;
+
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .mobile .headerBox .listMenu .item {
+        font-family: Raleway;
+        font-weight: 500;
+        width: 80%;
+        font-size: 18px;
+        line-height: 2.1em;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        margin-bottom: 0.5rem;
+}
+}
+
+@media screen and (max-width: 780px) {
+    .mobile .headerBox .navLogo .rightClose img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .mobile .headerBox .listMenu .itemActive {
+        color: #ff6700;
+    }
+    
+}
+  </style>
+</head>
+
+    <body>
+        <header id="header">
+            <nav>
+                <div class="nav-text-wrapper">
+                    <a href="https://www.wahool.com/"><img class="logo" src="https://video.wahool.com/website/images/Logo.png" alt="wahool-logo" ></a><!---->
+                    <a href="https://www.wahool.com/ourPlatform/" style="text-decoration:none; color:black;"> <div class="nav-text">Our Platform</div></a>
+                    <a href="https://www.wahool.com/catalog"   style="text-decoration:none;"><div class="nav-text">Product Catalog</div></a>
+                    <a href="https://www.wahool.com/theAgency/"  style="text-decoration:none;"><div class="nav-text">The Agency</div></a>
+                    <a href="https://www.wahool.com/about/"  style="text-decoration:none;"><div class="nav-text">About Us</div></a>
+                    <a href="https://www.wahool.com/blog/"  style="text-decoration:none;"><div class="nav-text">Blog</div></a>
+                </div>
+                <a href="https://www.wahool.com/myshop/SignIn" style="text-decoration:none;">
+                    <div class="apply-now-btn"> Apply Now </div>
+                </a>
+            </nav>
+        </header>
+        <div class="mDiv">
+            <div class="mobile">
+              <div class="headerBox" style="display:none;">
+                <div class="navLogo">
+                  <div class="leftLogo">
+                    <img src="https://video.wahool.com/website/images/mobile/navLogo.png" alt="" width="100">
+                  </div>
+                      <div class="rightClose">
+                        <img  onclick="mobileMenu()" src="https://video.wahool.com/website/images/mobile/navClose.png" alt="">
+                      </div>
+                </div>
+                        <div class="listMenu">
+                          <a href="https://www.wahool.com/"  style="text-decoration:none;"><div class="item">Home</div></a>
+                          <a href="https://www.wahool.com/ourPlatform/" style="text-decoration:none; color:rgb(255, 255, 255);"> <div class="item" >Our Platform</div></a>
+                          <a href="https://www.wahool.com/catalog"   style="text-decoration:none;"><div class="item" >Product Catalog</div></a>
+                          <a href="https://www.wahool.com/theAgency/"  style="text-decoration:none;"><div class="item">The Agency</div></a>
+                          <a href="https://www.wahool.com/about/"  style="text-decoration:none;"><div class="item">About Us</div></a>
+                          <a href="https://www.wahool.com/contact/"  style="text-decoration:none;"><div class="item">Contact Us</div></a>
+                          <a href="https://www.wahool.com/blog/"  style="text-decoration:none;"><div class="item itemActive">Blog</div></a>
+                          <a href="https://www.wahool.com/myshop/SignIn"  style="text-decoration:none;"><div class="item">Log In</div></a>
+                        </div>
+                        <a href="https://www.wahool.com/myshop/CreateAccount"  style="text-decoration:none;"><div class="btns">Apply Now</div></a>
+              </div>
+                      <div class="logo">
+                        <img src="https://video.wahool.com/website/images/Logo.png" alt="" width="100">
+                      </div>
+                      <a class="icon">
+                        <img  onclick="mobileMenu()" src="https://video.wahool.com/website/images/mobile/mobileMenu.png" width="20">
+                    </a>
+              </div>
+          </div>
+          <script>
+            function mobileMenu() {
+            var x = document.getElementsByClassName("headerBox")[0];
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+             x.style.display = "none";
+             }
+              console.log(x.style.display);
+            }
+            </script>
+    </body>
+</html>
